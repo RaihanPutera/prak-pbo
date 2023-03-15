@@ -100,7 +100,7 @@ class Lecalicus(Robot):
         self.menang += 1
         # Jika pada turn kelipatan 4 menang, maka health ditambah dan damage ditingkatkan
         if (Robot.jumlah_turn % self.syarat_boost == 0):
-            self.health = self.health_boost
+            self.health += self.health_boost
             robot_lain.health -= self.boost_atk()
             print(f"Lecalicus menambah darah sebanyak {self.health_boost} HP")
             print(f"Lecalicus menyerang sebanyak {self.boost_atk()} DMG")
